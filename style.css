@@ -124,6 +124,9 @@
     .locations p{
       font-size: 15px;
     }
+    .row{
+      flex-direction: column;
+  }
   }
 
   @media(min-width: 961px) and (max-width: 1023px){
@@ -149,7 +152,9 @@
     .nav-links ul li{
         display: block;
     }
-    
+    .row{
+      flex-direction: column;
+  }
   }
 
 /* origins */
@@ -239,18 +244,6 @@ h3{
     opacity: 1;
 }
 
-/* Media Queries (Home Page- Locations) */
-
-@media(min-width: 340px) and (max-width: 960px){
-  .row{
-      flex-direction: column;
-  }
-}
-@media(min-width: 961px) and (max-width: 1023px){
-  .row{
-      flex-direction: column;
-  }
-}
 
 /* Menu */
 
@@ -474,7 +467,52 @@ h3{
   padding: 10px;
   font-size: 18px;
 }
+@media(min-width: 360px) and (max-width: 960px){
+  .text-box h1{
+      font-size: 30px;
+      padding-top: 75px;
+  }
+  .text-box p{
+    font-size: 15px;
+  }
+  .origins h1{
+    font-size: 30px;
+  }
+  .origins p{
+    font-size: 15px;
+  }
+  .locations h1{
+    font-size: 30px;
+  }
+  .locations p{
+    font-size: 15px;
+  }
+  .nav-links ul li{
+    display: block;
+}
+}
 
+@media(min-width: 961px) and (max-width: 1023px){
+  .text-box h1{
+      font-size: 50px;
+  }
+
+  .text-box p{
+    font-size: 20px;
+  }
+  .origins h1{
+    font-size: 40px;
+  }
+  .origins p{
+    font-size: 20px;
+  }
+  .locations h1{
+    font-size: 40px;
+  }
+  .locations p{
+    font-size: 20px;
+  }
+}
 @media(max-width: 1023px){
   .contact{
     padding: 50px;
@@ -485,12 +523,16 @@ h3{
   }
   .contactInfo{
     margin-bottom: 40px;
+    align-items: center;
   }
   .contactInfo,
   .contactForm{
     width: 100%;
   }
-
+  
+.row{
+  flex-direction: column;
+}
 }
 
 /*Social Media Buttons*/
@@ -527,3 +569,4 @@ h3{
   background: red;
   color: white;
 }
+
