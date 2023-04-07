@@ -6,14 +6,7 @@
 }
 
 /* Hero Page Code */
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./photos/posi.jpeg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+
 
  nav{
     display: flex;
@@ -58,7 +51,14 @@
 .nav-links ul li:hover::after{
     width: 100%;
 }
-
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./photos/posi.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 .text-box{
     width: 90%;
     color: #C48463;
@@ -262,7 +262,8 @@ h3{
   
   .menu-group{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--column-width-min), 1fr));
+    grid-template-columns: repeat(auto-fit, 
+    minmax(var(--column-width-min), 1fr));
        /*-----The repeat function creates two equally sized columns-----*/
     gap: 0.5em;
     padding: 0.5em 0;
